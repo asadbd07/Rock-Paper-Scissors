@@ -5,7 +5,7 @@ function getComputerChoice(){
 }
     let computerScore = 0;
     let playerScore = 0;
-    
+
 function playRound(playerSelection, computerSelection){
     var results = "";
     
@@ -27,8 +27,8 @@ function playRound(playerSelection, computerSelection){
     return results;
 }
 
-function playGame(){
-    for (let i = 0; i <5; i++){
+function playGame(round){
+    for (let i = 0; i < round; i++){
         const playerSelection = prompt("Please enter your choice (rock, paper, scissors)").toLowerCase();
 
         const computerSelection = getComputerChoice();
@@ -45,4 +45,4 @@ function playGame(){
     }
 }
 
-console.log(playGame());
+console.log(playGame(5));
